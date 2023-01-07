@@ -33,8 +33,6 @@ touch constants/index.js
 code constants/index.js
 code scripts/deploy.js
 code hardhat.config.js
-
-
 ```
 
 ### update files then compile & deploys
@@ -42,4 +40,24 @@ code hardhat.config.js
 ```
 npx hardhat compile
 npx hardhat run scripts/deploy.js --network goerli
+```
+
+#
+
+## Frontend
+
+```bash
+npx create-next-app@latest
+cd my-app
+# add deps
+npm install web3modal ethers
+# add contract addresses
+mkdir constants
+touch constants/index.js
+# make changes
+code styles/Home.modules.css
+code pages/index.js
+code constants/index.js
+# run client
+npm run dev
 ```
